@@ -21,7 +21,7 @@ public class Frame : MonoBehaviour  //MonoBehaviour를 상속받음 -> 컴포넌
      void Update() //매 프래임마다 할 일
     {
         cnt++;
-        if (Time.time <=1) //프레임의 속도를 구하기 위함
+        if (Time.time <=1) //프레임의 속도를 구하기 위함 만약 Time.time==1로 할 경우 딱 1초에 도달하는 값이 없어 아무것도 출력되지 않음.
             print(cnt);
 
         z = Input.GetAxis("Vertical")*Time.deltaTime; //Time.delaTime 은 한 프레임의 길이, 프레임은 가변적임
