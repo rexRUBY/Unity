@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerAnim : MonoBehaviour
 {   
-    //Legacy 방식 에니메이션
+    //Legacy
     float x;
     float z;
     Animation anim;
